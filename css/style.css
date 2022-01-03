@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-weight: bold;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+h2,p{
+    text-align: center;
+    padding: 10px 30px;
+}
+.heading-container a{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: teal;
+}
+tr:nth-child(odd){
+    background-color: lightgrey;
+    height: 40px;
+}
+tr:nth-child(even){
+    background-color: whitesmoke;
+    height: 40px;
+}
+tr:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.850);
+    color:white;
+    height: 40px;
+}
+th,td{
+    padding-left: 10px;
+}
+.main-container{
+    width: 100vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 90%;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.heading-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.text-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+}
+.form-container{
+    width: 100%;
+}
+.show-container{
+    margin: 30px 20px;
+    width: calc(100% - 40px);
+    height: 39vh;
+    overflow-y: scroll;
+}
+table{
+    width: 100%;
+}
+input{
+    width: calc(100% - 40px);
+    height: 40px;
+    border-radius: 3px;
+    margin: 10px 20px;
+    border: none;
+    padding-left: 10px;
+    background-color:white;
+}
+input[type=submit]{
+    background-color: teal;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.btn-td{
+    width: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    cursor: pointer;
+}
+.btn{
+    width: 80px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+    color: white;
+    text-decoration: none;
+    margin: 5px 8px;
+    text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
+}
+.delete-btn{
+    background-color: orangered;
+    margin-left: 0px;
+}
+small{
+    color:red;
+    position: absolute;
+    margin-top: -18px;
+    font-size: 10px;
+}
+@media(max-width:1080px){
+    *{
+        font-size: 12px;
+    }
+    .card-container{
+        width: 100%;
+        height: max-content;
+        padding: 0px;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: translate(-0%,-0%);
+    }
+    .heading-container{
+        padding-top: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .btn{
+        width: 50px;
+        height: 30px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        margin: 8px 3px;
+        text-transform: uppercase;
+        font-size: 10px;
+        cursor: pointer;
+    }
+    th,td{
+        padding-left: 5px;
+    }
+
+}
+
